@@ -1,0 +1,8 @@
+{
+  "_comment": "Static, illustrative rates to USD. Used only with --offline or when the exchange-rate API is unreachable. Not real market data.",
+  "USD": 1.0,
+  "EUR": 1.08,
+  "BRL": 0.18,
+  "MXN": 0.055,
+  "GBP": 1.27
+}

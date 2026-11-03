@@ -1,0 +1,58 @@
+2026-11-03 11:39:07,647 | INFO    | Run started | input=data/input/payments_raw.xlsx | offline=True | reference date=2026-11-03
+2026-11-03 11:39:07,647 | INFO    | Step 1/5 Loading input
+2026-11-03 11:39:07,656 | INFO    | Loaded 126 rows
+2026-11-03 11:39:07,656 | INFO    | Step 2/5 Normalising and validating rows
+2026-11-03 11:39:07,659 | WARNING | Row 4 (P00003) rejected: invalid_status
+2026-11-03 11:39:07,660 | WARNING | Row 5 (P00004) rejected: invalid_date
+2026-11-03 11:39:07,660 | WARNING | Row 7 (P00006) rejected: missing_customer_id
+2026-11-03 11:39:07,660 | WARNING | Row 12 (P00011) rejected: invalid_amount
+2026-11-03 11:39:07,660 | WARNING | Row 13 (P00012) rejected: future_date
+2026-11-03 11:39:07,660 | WARNING | Row 17 (P00016) rejected: invalid_email
+2026-11-03 11:39:07,660 | INFO    | Row 24 (P00023) cleaned (whitespace/casing)
+2026-11-03 11:39:07,660 | WARNING | Row 31 (P00030) rejected: future_date
+2026-11-03 11:39:07,660 | WARNING | Row 34 (P00033) rejected: invalid_date
+2026-11-03 11:39:07,660 | WARNING | Row 36 (P00035) rejected: non_positive_amount
+2026-11-03 11:39:07,660 | INFO    | Row 37 (P00036) cleaned (whitespace/casing)
+2026-11-03 11:39:07,661 | WARNING | Row 38 (P00037) rejected: invalid_email
+2026-11-03 11:39:07,661 | WARNING | Row 40 (P00039) rejected: non_positive_amount
+2026-11-03 11:39:07,661 | WARNING | Row 43 (P00042) rejected: invalid_date
+2026-11-03 11:39:07,661 | WARNING | Row 53 (P00052) rejected: non_positive_amount
+2026-11-03 11:39:07,661 | WARNING | Row 57 (P00056) rejected: missing_customer_id
+2026-11-03 11:39:07,661 | WARNING | Row 58 (P00057) rejected: invalid_email
+2026-11-03 11:39:07,661 | WARNING | Row 61 (P00060) rejected: invalid_email
+2026-11-03 11:39:07,661 | INFO    | Row 62 (P00061) cleaned (whitespace/casing)
+2026-11-03 11:39:07,661 | WARNING | Row 65 (P00064) rejected: invalid_amount
+2026-11-03 11:39:07,661 | WARNING | Row 66 (P00065) rejected: non_positive_amount
+2026-11-03 11:39:07,661 | INFO    | Row 68 (P00067) cleaned (whitespace/casing)
+2026-11-03 11:39:07,661 | WARNING | Row 71 (P00070) rejected: invalid_amount
+2026-11-03 11:39:07,661 | WARNING | Row 75 (P00074) rejected: invalid_currency
+2026-11-03 11:39:07,662 | WARNING | Row 77 (P00076) rejected: invalid_currency
+2026-11-03 11:39:07,662 | WARNING | Row 78 (P00032) rejected: duplicate_payment_id
+2026-11-03 11:39:07,662 | WARNING | Row 79 (P00077) rejected: missing_customer_id
+2026-11-03 11:39:07,662 | WARNING | Row 80 (P00078) rejected: invalid_date
+2026-11-03 11:39:07,662 | INFO    | Row 86 (P00084) cleaned (whitespace/casing)
+2026-11-03 11:39:07,662 | WARNING | Row 89 (P00087) rejected: invalid_currency
+2026-11-03 11:39:07,662 | WARNING | Row 91 (P00089) rejected: invalid_email
+2026-11-03 11:39:07,662 | WARNING | Row 92 (P00090) rejected: non_positive_amount
+2026-11-03 11:39:07,662 | INFO    | Row 96 (P00094) cleaned (whitespace/casing)
+2026-11-03 11:39:07,662 | WARNING | Row 97 (P00095) rejected: missing_customer_id
+2026-11-03 11:39:07,662 | WARNING | Row 101 (P00092) rejected: duplicate_payment_id
+2026-11-03 11:39:07,662 | WARNING | Row 105 (P00102) rejected: invalid_status
+2026-11-03 11:39:07,662 | WARNING | Row 106 (P00018) rejected: duplicate_payment_id
+2026-11-03 11:39:07,662 | INFO    | Row 108 (P00104) cleaned (whitespace/casing)
+2026-11-03 11:39:07,662 | WARNING | Row 109 (P00083) rejected: duplicate_payment_id
+2026-11-03 11:39:07,662 | WARNING | Row 111 (P00096) rejected: duplicate_payment_id
+2026-11-03 11:39:07,662 | INFO    | Row 113 (P00107) cleaned (whitespace/casing)
+2026-11-03 11:39:07,663 | WARNING | Row 117 (P00111) rejected: invalid_status
+2026-11-03 11:39:07,663 | WARNING | Row 124 (P00118) rejected: invalid_email
+2026-11-03 11:39:07,663 | WARNING | Row 125 (P00112) rejected: duplicate_payment_id
+2026-11-03 11:39:07,663 | WARNING | Row 127 (P00120) rejected: invalid_amount
+2026-11-03 11:39:07,663 | INFO    | Validation done: 89 valid, 37 rejected
+2026-11-03 11:39:07,663 | INFO    | Step 3/5 Enriching valid rows with USD amounts
+2026-11-03 11:39:07,663 | INFO    | Offline mode: using static rate for EUR
+2026-11-03 11:39:07,663 | INFO    | Offline mode: using static rate for GBP
+2026-11-03 11:39:07,663 | INFO    | Offline mode: using static rate for BRL
+2026-11-03 11:39:07,663 | INFO    | Offline mode: using static rate for MXN
+2026-11-03 11:39:07,663 | INFO    | Step 4/5 Building summary
+2026-11-03 11:39:07,666 | INFO    | Step 5/5 Writing output workbooks
+2026-11-03 11:39:07,707 | INFO    | Run finished | valid=89 rejected=37 total_usd=91185.92

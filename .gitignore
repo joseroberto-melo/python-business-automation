@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Generated at run time (see examples/ for a committed sample run)
+output/*
+!output/.gitkeep
+logs/*
+!logs/.gitkeep
